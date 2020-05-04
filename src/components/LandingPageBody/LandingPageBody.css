@@ -1,0 +1,16 @@
+section.two-column-section img {
+    width: 100%;
+}
+
+/*Call to action section*/
+section.call-to-action {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+
+section.call-to-action a {
+    color: white;
+}

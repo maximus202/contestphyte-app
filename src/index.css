@@ -11,3 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@media only screen and (min-width: 768px) {
+  section.two-column-section {
+    display: flex;
+  }
+
+  section.image-right {
+    flex-direction: row-reverse;
+  }
+
+  section.image-left {
+    flex-direction: row;
+  }
+
+  section.individual-column {
+    width: 50%;
+    padding: 5% 10%;
+    align-self: center;
+  }
+}
