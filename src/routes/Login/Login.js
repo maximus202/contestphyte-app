@@ -1,16 +1,16 @@
 import React from 'react';
 import NavBar from '../../components/NavBar/NavBar';
-import RegistrationForm from '../../components/RegistrationForm/RegistrationForm';
+import LoginForm from '../../components/LoginForm/LoginForm';
 
-function SignUp() {
+function Login() {
   return (
     <>
       <NavBar />
       <main>
-        <RegistrationForm />
+        <LoginForm />
       </main>
     </>
   );
 }
 
-export default SignUp;
+export default Login;
