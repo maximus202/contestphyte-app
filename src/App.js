@@ -4,6 +4,7 @@ import LandingPage from './routes/LandingPage/LandingPage';
 import SignUp from './routes/SignUp/SignUp';
 import Login from './routes/Login/Login';
 import Contests from './routes/Contests/Contests';
+import ContestProfile from './routes/ContestProfile/ContestProfile';
 
 function App() {
   return (
@@ -24,6 +25,11 @@ function App() {
       <Route
         component={Contests}
         path="/contests"
+      />
+      <Route
+        component={ContestProfile}
+        exact
+        path="/contest-profile/:contestId"
       />
     </>
   );

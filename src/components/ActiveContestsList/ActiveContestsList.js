@@ -6,7 +6,7 @@ function ActiveContestsList() {
     <section>
       {CONTESTS.map((contest) => (
         <p>
-          <a href="/">
+          <a href={`/contest-profile/${contest.id}`}>
             {contest.contestName}
             {' '}
             &gt;
