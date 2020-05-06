@@ -6,6 +6,11 @@ function SignUp() {
   return (
     <>
       <NavBar />
+      <header>
+        <section className="individual-column">
+          <h1>Create your Contestphyte account</h1>
+        </section>
+      </header>
       <main>
         <RegistrationForm />
       </main>

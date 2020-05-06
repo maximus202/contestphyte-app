@@ -4,9 +4,6 @@ function LoginForm() {
   return (
     <section className="full-screen two-column-section">
       <section className="individual-column">
-        <h1>Login</h1>
-      </section>
-      <section className="individual-column">
         <form>
           <label htmlFor="email-address">Email address</label>
           <input type="email" name="email-address" />

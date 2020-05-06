@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom';
 import LandingPage from './routes/LandingPage/LandingPage';
 import SignUp from './routes/SignUp/SignUp';
 import Login from './routes/Login/Login';
+import Contests from './routes/Contests/Contests';
 
 function App() {
   return (
@@ -19,6 +20,10 @@ function App() {
       <Route
         component={Login}
         path="/login"
+      />
+      <Route
+        component={Contests}
+        path="/contests"
       />
     </>
   );

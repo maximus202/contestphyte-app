@@ -12,6 +12,13 @@ code {
     monospace;
 }
 
+section.section-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @media only screen and (min-width: 768px) {
   section.two-column-section {
     display: flex;

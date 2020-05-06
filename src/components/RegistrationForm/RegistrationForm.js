@@ -5,9 +5,6 @@ function RegistrationForm() {
   return (
     <section className="full-screen two-column-section">
       <section className="individual-column">
-        <h1>Create your Contestphyte account</h1>
-      </section>
-      <section className="individual-column">
         <form>
           <label name="first-name">First name</label>
           <input type="text" name="first-name" required />

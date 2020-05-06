@@ -1,0 +1,22 @@
+section.single-stat {
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+section.single-stat p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    section.thirty-day-stats {
+        display: flex;
+        flex-direction: row;
+    }
+}

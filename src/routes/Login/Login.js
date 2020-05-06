@@ -6,6 +6,11 @@ function Login() {
   return (
     <>
       <NavBar />
+      <header>
+        <section className="individual-column">
+          <h1>Login</h1>
+        </section>
+      </header>
       <main>
         <LoginForm />
       </main>
