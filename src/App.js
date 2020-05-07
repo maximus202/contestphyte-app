@@ -9,6 +9,7 @@ import CreateContest from './routes/CreateContest/CreateContest';
 import ContestLandingPage from './routes/ContestLandingPage/ContestLandingPage';
 import PostSignUp from './routes/PostSignUp/PostSignUp';
 import AccountSettings from './routes/AccountSettings/AccountSettings';
+import ChangePassword from './routes/ChangePassword/ChangePassword';
 
 function App() {
   return (
@@ -50,6 +51,10 @@ function App() {
       <Route
         component={AccountSettings}
         path="/account-settings"
+      />
+      <Route
+        component={ChangePassword}
+        path="/change-password"
       />
     </>
   );
