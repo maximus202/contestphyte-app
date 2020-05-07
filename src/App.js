@@ -5,6 +5,7 @@ import SignUp from './routes/SignUp/SignUp';
 import Login from './routes/Login/Login';
 import Contests from './routes/Contests/Contests';
 import ContestProfile from './routes/ContestProfile/ContestProfile';
+import CreateContest from './routes/CreateContest/CreateContest';
 
 function App() {
   return (
@@ -30,6 +31,10 @@ function App() {
         component={ContestProfile}
         exact
         path="/contest-profile/:contestId"
+      />
+      <Route
+        component={CreateContest}
+        path="/create-contest"
       />
     </>
   );

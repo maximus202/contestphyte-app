@@ -19,6 +19,11 @@ section.section-header {
   align-items: center;
 }
 
+section.form-section {
+  display: flex;
+  flex-direction: column;
+}
+
 @media only screen and (min-width: 768px) {
   section.two-column-section {
     display: flex;
