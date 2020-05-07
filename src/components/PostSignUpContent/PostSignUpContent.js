@@ -15,7 +15,11 @@ function PostSignUpContent() {
       </header>
       <main>
         <section>
-          <h2>You have 1 entry, cool! Share with your friends and earn 10 additional entires for every friend that joins!</h2>
+          <h2>
+            You have 1 entry, cool! Share with your friends and earn 10 additional
+            entires for every friend that joins!
+
+          </h2>
           <form>
             <label htmlFor="friend-email-1">1st friend&apos;s email address:</label>
             <input type="text" name="friend-email-1" />
