@@ -7,6 +7,7 @@ import Contests from './routes/Contests/Contests';
 import ContestProfile from './routes/ContestProfile/ContestProfile';
 import CreateContest from './routes/CreateContest/CreateContest';
 import ContestLandingPage from './routes/ContestLandingPage/ContestLandingPage';
+import PostSignUp from './routes/PostSignUp/PostSignUp';
 
 function App() {
   return (
@@ -40,6 +41,10 @@ function App() {
       <Route
         component={ContestLandingPage}
         path="/contest/:contestId"
+      />
+      <Route
+        component={PostSignUp}
+        path="/post-sign-up/:contestId/:participantId"
       />
     </>
   );
