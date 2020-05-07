@@ -1,0 +1,29 @@
+section.participant-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+section.participants-list-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.participant-item p {
+    margin: 0;
+}
+
+section.confirmed-icon {
+    width: 10%;
+    text-align: center;
+}
+
+section.participant-info {
+    width: 70%;
+}
+
+section.referrals {
+    text-align: center;
+    width: 20%;
+}

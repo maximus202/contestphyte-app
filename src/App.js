@@ -8,6 +8,7 @@ import ContestProfile from './routes/ContestProfile/ContestProfile';
 import CreateContest from './routes/CreateContest/CreateContest';
 import ContestLandingPage from './routes/ContestLandingPage/ContestLandingPage';
 import PostSignUp from './routes/PostSignUp/PostSignUp';
+import ParticipantsList from './routes/ParticipantsList/ParticipantsList';
 import AccountSettings from './routes/AccountSettings/AccountSettings';
 import ChangePassword from './routes/ChangePassword/ChangePassword';
 
@@ -42,11 +43,18 @@ function App() {
       />
       <Route
         component={ContestLandingPage}
+        exact
         path="/contest/:contestId"
       />
       <Route
         component={PostSignUp}
+        exact
         path="/post-sign-up/:contestId/:participantId"
+      />
+      <Route
+        component={ParticipantsList}
+        exact
+        path="/participants-list/:contestId"
       />
       <Route
         component={AccountSettings}
