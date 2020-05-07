@@ -1,0 +1,11 @@
+section.contest-banner img {
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    section.contest-landing-page-content {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

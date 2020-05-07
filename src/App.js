@@ -6,6 +6,7 @@ import Login from './routes/Login/Login';
 import Contests from './routes/Contests/Contests';
 import ContestProfile from './routes/ContestProfile/ContestProfile';
 import CreateContest from './routes/CreateContest/CreateContest';
+import ContestLandingPage from './routes/ContestLandingPage/ContestLandingPage';
 
 function App() {
   return (
@@ -35,6 +36,10 @@ function App() {
       <Route
         component={CreateContest}
         path="/create-contest"
+      />
+      <Route
+        component={ContestLandingPage}
+        path="/contest/:contestId"
       />
     </>
   );
