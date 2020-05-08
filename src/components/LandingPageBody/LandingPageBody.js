@@ -16,8 +16,8 @@ function LandingPageBody() {
               visitors, mobilizes your followers, and gets your
               name trending!
             </p>
-            <p><a href="/">Run a contest &gt;</a></p>
-            <p><a href="/">Login &gt;</a></p>
+            <p><a href="/signup">Run a contest &gt;</a></p>
+            <p><a href="/login">Login &gt;</a></p>
           </section>
         </section>
       </header>
@@ -55,7 +55,7 @@ function LandingPageBody() {
           Try it out!
         </h2>
         <p>
-          <a href="/">
+          <a href="/signup">
             Get started &gt;
           </a>
         </p>

@@ -19,7 +19,7 @@ function RegistrationForm() {
           <label name="password-retype">Re-type password</label>
           <input type="password" name="password-retype" required />
           <input type="submit" value="Create account" />
-          <p><a href="/">Already have an account? Login &gt;</a></p>
+          <p><a href="/login">Already have an account? Login &gt;</a></p>
         </form>
       </section>
     </section>

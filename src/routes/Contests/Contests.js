@@ -18,7 +18,7 @@ function Contests() {
         <ThirtyDayStats />
         <section className="section-header">
           <h2>Active Contests</h2>
-          <button type="button">Add Contest</button>
+          <p><a href="/create-contest">Add Contest</a></p>
         </section>
         <ActiveContestsList />
         <section className="section-header">

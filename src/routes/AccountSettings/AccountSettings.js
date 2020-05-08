@@ -19,7 +19,7 @@ function AccountSettings() {
           <label htmlFor="email">Email address</label>
           <input type="text" name="email" placeholder="bsmith@company.com" />
           <input type="submit" value="Save" />
-          <p><a href="/">Change password &gt;</a></p>
+          <p><a href="/change-password">Change password &gt;</a></p>
         </form>
       </section>
     </>

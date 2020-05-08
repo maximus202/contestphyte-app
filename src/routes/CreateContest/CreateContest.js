@@ -117,8 +117,8 @@ function CreateContest() {
               <option value="WY">Wyoming</option>
             </select>
           </section>
-          <button type="button" name="preview">Preview</button>
-          <button type="button" name="preview">Save Draft</button>
+          <p><a href="/contest/1">Preview</a></p>
+          <p><a href="/contests">Save Draft</a></p>
           <button type="submit" name="create">Publish</button>
         </form>
       </main>

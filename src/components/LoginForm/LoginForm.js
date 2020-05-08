@@ -10,7 +10,7 @@ function LoginForm() {
           <label htmlFor="password">Password</label>
           <input type="password" name="password" />
           <input type="submit" value="Login" />
-          <p><a href="/">Create an account &gt;</a></p>
+          <p><a href="/signup">Create an account &gt;</a></p>
         </form>
       </section>
     </section>

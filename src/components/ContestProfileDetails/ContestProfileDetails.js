@@ -8,10 +8,10 @@ class ContestProfileDetails extends Component {
       <>
         <h2>April 2020 Sweatpant Giveaway</h2>
         <section className="contest-profile-buttons">
-          <button type="button">See participants list &gt;</button>
-          <button type="button">Edit contest &gt;</button>
-          <button type="button">Delete contest &gt;</button>
-          <button type="button">View landing page &gt;</button>
+          <a href="/participants-list/1">See participants list &gt;</a>
+          <a href="/create-contest">Edit contest &gt;</a>
+          <a href="/">Delete contest &gt;</a>
+          <a href="/contest/1">View landing page &gt;</a>
         </section>
         <h2>Details</h2>
         <section>

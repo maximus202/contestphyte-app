@@ -37,7 +37,7 @@ function PostSignUpContent() {
             <a href="/">contestphyte.com/24895237849234</a>
             .
           </p>
-          <p><a href="/">Share on Facebook &gt;</a></p>
+          <p><a href="http://www.facebook.com">Share on Facebook &gt;</a></p>
         </section>
       </main>
       <footer>
