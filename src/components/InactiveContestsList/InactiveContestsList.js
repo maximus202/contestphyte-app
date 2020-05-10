@@ -1,21 +1,33 @@
-import React from 'react';
-import INACTIVECONTESTS from '../../INACTIVECONTESTS';
+import React, { Component } from 'react';
+import CONTESTS from '../../CONTESTS';
 
-function InactiveContestList() {
-  return (
-    <section>
-      {INACTIVECONTESTS.map((contest) => (
-        <p>
-          <a href="/">
-            {contest.contestName}
-            {' '}
-            &gt;
-          </a>
+class InactiveContestList extends Component {
+  render() {
+    const inactiveContests = [];
 
-        </p>
-      ))}
-    </section>
-  );
+    for (let i = 0; i < CONTESTS.length; i++) {
+      if (CONTESTS[i].isActive == 'false') {
+        inactiveContests.push(CONTESTS[i]);
+      }
+    }
+
+    console.log(inactiveContests);
+
+    return (
+      <section>
+        {inactiveContests.map((contest) => (
+          <p>
+            <a href={`/contest-profile/${contest.id}`}>
+              {contest.contestName}
+              {' '}
+              &gt;
+            </a>
+
+          </p>
+        ))}
+      </section>
+    );
+  }
 }
 
 export default InactiveContestList;

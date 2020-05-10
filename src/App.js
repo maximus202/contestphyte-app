@@ -11,6 +11,7 @@ import PostSignUp from './routes/PostSignUp/PostSignUp';
 import ParticipantsList from './routes/ParticipantsList/ParticipantsList';
 import AccountSettings from './routes/AccountSettings/AccountSettings';
 import ChangePassword from './routes/ChangePassword/ChangePassword';
+import EditContest from './routes/EditContest/EditContest';
 
 function App() {
   return (
@@ -42,9 +43,19 @@ function App() {
         path="/create-contest"
       />
       <Route
+        component={EditContest}
+        exact
+        path="/edit-contest/:contestId"
+      />
+      <Route
         component={ContestLandingPage}
         exact
         path="/contest/:contestId"
+      />
+      <Route
+        component={ContestLandingPage}
+        exact
+        path="/contest/:contestId/:referrerId"
       />
       <Route
         component={PostSignUp}

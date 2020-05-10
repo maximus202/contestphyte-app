@@ -1,21 +1,31 @@
-import React from 'react';
+import React, { Component } from 'react';
 import CONTESTS from '../../CONTESTS';
 
-function ActiveContestsList() {
-  return (
-    <section>
-      {CONTESTS.map((contest) => (
-        <p>
-          <a href={`/contest-profile/${contest.id}`}>
-            {contest.contestName}
-            {' '}
-            &gt;
-          </a>
+class ActiveContestsList extends Component {
+  render() {
+    const activeContests = [];
 
-        </p>
-      ))}
-    </section>
-  );
+    for (let i = 0; i < CONTESTS.length; i++) {
+      if (CONTESTS[i].isActive == 'true') {
+        activeContests.push(CONTESTS[i]);
+      }
+    }
+
+    return (
+      <section>
+        {activeContests.map((contest) => (
+          <p>
+            <a href={`/contest-profile/${contest.id}`}>
+              {contest.contestName}
+              {' '}
+              &gt;
+            </a>
+
+          </p>
+        ))}
+      </section>
+    );
+  }
 }
 
 export default ActiveContestsList;

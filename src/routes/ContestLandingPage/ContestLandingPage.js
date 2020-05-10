@@ -1,13 +1,14 @@
-import React from 'react';
-import NavBar from '../../components/NavBar/NavBar';
+import React, { Component } from 'react';
 import ContestLandingPageContent from '../../components/ContestLandingPageContent/ContestLandingPageContent';
 
-function ContestLandingPage() {
-  return (
-    <>
-      <ContestLandingPageContent />
-    </>
-  );
+class ContestLandingPage extends Component {
+  render() {
+    return (
+      <>
+        <ContestLandingPageContent contest={this.props.match.params} />
+      </>
+    );
+  }
 }
 
 export default ContestLandingPage;
