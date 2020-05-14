@@ -3,12 +3,16 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-left: 1%;
-    padding-right: 1%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
     box-shadow: 1px 1px 7px lightgrey;
 }
 
 nav img {
     width: 170px;
     height: 100%;
+}
+
+img.menu-icon {
+    width: 64px;
 }
