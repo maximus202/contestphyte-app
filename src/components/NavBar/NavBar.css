@@ -8,11 +8,24 @@ nav {
     box-shadow: 1px 1px 7px lightgrey;
 }
 
-nav img {
+img.logo {
     width: 170px;
     height: 100%;
 }
 
+nav section {
+    display: flex;
+}
+
 img.menu-icon {
-    width: 64px;
+    width: 48px;
+}
+
+div.ReactModal__Content.ReactModal__Content--after-open {
+    width: 100%;
+    height: 100%;
+    top: auto;
+    bottom: auto; 
+    right: auto;
+    left: auto;
 }
