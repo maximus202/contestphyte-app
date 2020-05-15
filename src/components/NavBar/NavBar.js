@@ -12,15 +12,19 @@ function NavBar() {
       bottom: '',
       left: '',
       right: '',
+      padding: '',
+      background: 'rgba(255, 255, 255, 0.75);',
     },
   };
   return (
     <nav>
-      <img
-        className="logo"
-        src="https://github.com/maximus202/contestphyte-app/blob/223d1478b020322c06713c913fb4d7cee41a010c/public/contestphytelogo.png?raw=true"
-        alt="Contestphyte logo."
-      />
+      <a href="/">
+        <img
+          className="logo"
+          src="https://github.com/maximus202/contestphyte-app/blob/223d1478b020322c06713c913fb4d7cee41a010c/public/contestphytelogo.png?raw=true"
+          alt="Contestphyte logo."
+        />
+      </a>
       <section
         type="button"
         onClick={() => setModalIsOpen(true)}
@@ -38,16 +42,15 @@ function NavBar() {
         onRequestClose={() => setModalIsOpen(false)}
       >
         <ul>
-          <li>Home</li>
-          <li>Contests</li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/signup">Sign up</a></li>
+          <li><a href="/login">Login</a></li>
         </ul>
-        <button
-          type="button"
+        <img
+          src="https://github.com/maximus202/contestphyte-app/blob/master/public/close.png?raw=true"
+          alt="Close."
           onClick={() => setModalIsOpen(false)}
-        >
-          X
-
-        </button>
+        />
       </Modal>
     </nav>
   );
