@@ -1,0 +1,14 @@
+section.form-section {
+    display: flex;
+    flex-direction: column;
+}
+
+section.create-contest-form-options {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+section.create-contest-form-options a {
+    margin-right: 10px;
+}

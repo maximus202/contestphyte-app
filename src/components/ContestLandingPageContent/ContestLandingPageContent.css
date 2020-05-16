@@ -1,5 +1,33 @@
 section.contest-banner img {
     width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+section.contest-landing-page-content header {
+    text-align: center;
+}
+
+form.contest-entry-form {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+form.contest-entry-form h2 {
+    text-align: center;
+}
+
+section.contest-body-copy {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+footer.contest-landing-page-footer {
+    background-color: white;
+    margin: 10px;
+}
+
+footer.contest-landing-page-footer p, footer.contest-landing-page-footer a {
+    font-size: 12px;
 }
 
 @media only screen and (min-width: 768px) {

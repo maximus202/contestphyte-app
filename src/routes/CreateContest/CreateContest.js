@@ -1,15 +1,16 @@
 import React from 'react';
 import NavBar from '../../components/NavBar/NavBar';
+import './CreateContest.css';
 
 function CreateContest() {
   return (
     <>
       <NavBar />
-      <header>
+      <header className="with-margins">
         <h1>Create a contest</h1>
       </header>
       <main>
-        <form>
+        <form className="with-margins">
           <section className="form-section">
             <h2>Business information</h2>
             <label htmlFor="business-name">Business name</label>
@@ -117,9 +118,11 @@ function CreateContest() {
               <option value="WY">Wyoming</option>
             </select>
           </section>
-          <p><a href="/contest/1">Preview</a></p>
-          <p><a href="/contests">Save Draft</a></p>
-          <button type="submit" name="create">Publish</button>
+          <section className="create-contest-form-options">
+            <p><a href="/contest/1">Preview &gt;</a></p>
+            <p><a href="/contests">Save Draft &gt;</a></p>
+          </section>
+          <input type="submit" value="Publish" />
         </form>
       </main>
     </>

@@ -25,7 +25,7 @@ class ContestLandingPageContent extends Component {
           </section>
         </header>
         <main>
-          <section>
+          <section className="contest-body-copy">
             <p>
               {contestDetails.contestDescription}
             </p>
@@ -37,8 +37,8 @@ class ContestLandingPageContent extends Component {
             </p>
           </section>
           <section>
-            <h2>Enter your details below!</h2>
-            <form>
+            <form className="contest-entry-form">
+              <h2>Enter your details below!</h2>
               <label htmlFor="first-name">First Name</label>
               <input type="name" name="first-name" />
               <label htmlFor="last-name">Last Name</label>
@@ -54,11 +54,12 @@ class ContestLandingPageContent extends Component {
                   .
                 </label>
               </span>
+              <a href="/post-sign-up/1/1">Create</a>
               <input type="submit" value="Create" />
             </form>
           </section>
         </main>
-        <footer>
+        <footer className="contest-landing-page-footer">
           <p>
             Powered by Contestphyte. Contestphyte does not sponsor, administer or
             endorse this promotion. Contestphyte is not responsible for

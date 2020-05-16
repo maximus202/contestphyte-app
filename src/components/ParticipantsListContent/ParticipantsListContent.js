@@ -13,7 +13,7 @@ class ParticipantsListContent extends Component {
     console.log(contestParticipants);
 
     return (
-      <>
+      <main className="with-margins">
         <section className="participants-list-title">
           <h2>{contest.contestName}</h2>
           <button type="button">Export</button>
@@ -48,7 +48,7 @@ class ParticipantsListContent extends Component {
             </section>
           ))}
         </section>
-      </>
+      </main>
     );
   }
 }

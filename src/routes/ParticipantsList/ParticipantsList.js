@@ -7,7 +7,7 @@ class ParticipantsList extends Component {
     return (
       <>
         <NavBar />
-        <header>
+        <header className="with-margins">
           <h1>Participants List</h1>
         </header>
         <ParticipantsListContent contest={this.props.match.params} />

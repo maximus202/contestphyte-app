@@ -7,7 +7,7 @@ class ContestProfile extends Component {
     return (
       <>
         <NavBar />
-        <header>
+        <header className="with-margins">
           <h1>Contest Profile</h1>
         </header>
         <main>

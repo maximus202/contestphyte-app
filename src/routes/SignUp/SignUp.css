@@ -1,0 +1,22 @@
+header.sign-up-page {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+@media only screen and (min-width: 768px) {
+    header.sign-up-page {
+        text-align: center;
+    }
+
+    form.sign-up-page {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    form.sign-up-page {
+        width: 30%;
+    }
+}

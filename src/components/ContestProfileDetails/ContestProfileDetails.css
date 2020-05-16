@@ -7,4 +7,7 @@ section.contest-profile-buttons {
     section.contest-profile-buttons {
         flex-direction: row;
     }
+    section.contest-profile-buttons a {
+        padding-right: 10px;
+    }
 }

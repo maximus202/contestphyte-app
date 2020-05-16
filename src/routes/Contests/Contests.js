@@ -8,10 +8,10 @@ function Contests() {
   return (
     <>
       <NavBar />
-      <header>
+      <header className="with-margins">
         <h1>Contests</h1>
       </header>
-      <main>
+      <main className="with-margins">
         <section className="section-header">
           <h2>30 Day Stats</h2>
         </section>

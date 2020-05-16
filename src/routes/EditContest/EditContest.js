@@ -11,11 +11,11 @@ class EditContest extends Component {
     return (
       <>
         <NavBar />
-        <header>
+        <header className="with-margins">
           <h1>Edit Contest</h1>
         </header>
         <main>
-          <form>
+          <form className="with-margins">
             <section className="form-section">
               <h2>Business information</h2>
               <label htmlFor="business-name">Business name</label>
@@ -135,9 +135,11 @@ class EditContest extends Component {
               <label htmlFor="business-zip">Business Zip Code</label>
               <input type="text" name="business-zip" placeholder={contestDetails.businessZip} />
             </section>
-            <p><a href="/contest/1">Preview</a></p>
-            <p><a href="/contests">Save Draft</a></p>
-            <button type="submit" name="create">Publish</button>
+            <section className="create-contest-form-options">
+              <p><a href="/contest/1">Preview</a></p>
+              <p><a href="/contests">Save Draft</a></p>
+            </section>
+            <input type="submit" value="Publish" />
           </form>
         </main>
       </>

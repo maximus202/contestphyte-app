@@ -5,11 +5,11 @@ function ChangePassword() {
   return (
     <>
       <NavBar />
-      <header>
+      <header className="sign-up-page">
         <h1>Change password</h1>
       </header>
       <section>
-        <form>
+        <form className="sign-up-page">
           <label htmlFor="old-password">Old password</label>
           <input type="password" name="old-password" />
           <label htmlFor="new-password">New password</label>

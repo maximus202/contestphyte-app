@@ -9,7 +9,7 @@ function LandingPageBody() {
           <section className="individual-column">
             <img src="https://github.com/maximus202/contestphyte-app/blob/master/public/iphonetemplate.png?raw=true" alt="Contestphyte screenshot on iPhone." />
           </section>
-          <section className="individual-column">
+          <section className="individual-column landing-page-copy">
             <h1>Encourage brand awareness from your biggest fans.</h1>
             <p>
               Easily run contests for your business that engage new
@@ -25,7 +25,7 @@ function LandingPageBody() {
         <section className="individual-column">
           <img src="https://github.com/maximus202/contestphyte-app/blob/master/public/network.png?raw=true" alt="Network of people." />
         </section>
-        <section className="individual-column">
+        <section className="individual-column landing-page-copy">
           <h2>Shareability too tempting not to act on</h2>
           <p>
             What&apos;s a better way to encourage shares? By rewarding it.
@@ -39,7 +39,7 @@ function LandingPageBody() {
         <section className="individual-column">
           <img src="https://github.com/maximus202/contestphyte-app/blob/master/public/email.png?raw=true" alt="Email envelope." />
         </section>
-        <section className="individual-column">
+        <section className="individual-column landing-page-copy">
           <h2>Build your email list</h2>
           <p>
             It&apos;s not the first time you&apos;ve heard it, but it&apos;s been

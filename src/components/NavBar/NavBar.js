@@ -42,9 +42,11 @@ function NavBar() {
         onRequestClose={() => setModalIsOpen(false)}
       >
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/signup">Sign up</a></li>
-          <li><a href="/login">Login</a></li>
+          <li><a href="/contests">Home</a></li>
+          <li><a href="/contests">Contests</a></li>
+          <li><a href="/create-contest">Create contest</a></li>
+          <li><a href="/account-settings">Account Settings</a></li>
+          <li><a href="/">Logout</a></li>
         </ul>
         <img
           src="https://github.com/maximus202/contestphyte-app/blob/master/public/close.png?raw=true"

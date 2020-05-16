@@ -11,11 +11,11 @@ class ContestProfileDetails extends Component {
     console.log(selectedContest);
 
     return (
-      <>
+      <main className="with-margins">
         <h2>{selectedContest.contestName}</h2>
         <section className="contest-profile-buttons">
           <a href={`/participants-list/${contestId}`}>See participants list &gt;</a>
-          <a href="/create-contest">Edit contest &gt;</a>
+          <a href="/edit-contest/1">Edit contest &gt;</a>
           <a href="/">Delete contest &gt;</a>
           <a href="/contest/1">View landing page &gt;</a>
         </section>
@@ -37,7 +37,7 @@ class ContestProfileDetails extends Component {
             {selectedContest.endTime}
           </p>
         </section>
-        <h2>Stats</h2>
+        <h2>Metrics</h2>
         <section className="thirty-day-stats">
           <section className="single-stat">
             <p>{selectedContest.impressions}</p>
@@ -56,7 +56,7 @@ class ContestProfileDetails extends Component {
             <p>Conversion Rate</p>
           </section>
         </section>
-      </>
+      </main>
     );
   }
 }

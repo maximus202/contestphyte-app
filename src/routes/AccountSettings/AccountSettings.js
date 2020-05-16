@@ -5,11 +5,11 @@ function AccountSettings() {
   return (
     <>
       <NavBar />
-      <header>
+      <header className="sign-up-page">
         <h1>Account Settings</h1>
       </header>
-      <section>
-        <form>
+      <main>
+        <form className="sign-up-page">
           <label htmlFor="first-name">First name</label>
           <input type="text" name="first-name" placeholder="Bob" />
           <label htmlFor="last-name">Last name</label>
@@ -21,7 +21,7 @@ function AccountSettings() {
           <input type="submit" value="Save" />
           <p><a href="/change-password">Change password &gt;</a></p>
         </form>
-      </section>
+      </main>
     </>
   );
 }
