@@ -1,5 +1,6 @@
 {
     "version": 2,
+    "alias": "contestphyte-app",
     "name": "contestphyte-app",
     "routes": [
         {

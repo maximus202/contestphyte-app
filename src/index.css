@@ -44,12 +44,12 @@ header.landing-page {
   padding: 0;
 }
 
-/*section.section-header {
+section.section-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}*/
+}
 
 form {
   background-color: #F2F2F2;
@@ -88,7 +88,7 @@ section.call-to-action h2 {
 }
 
 footer p {
-  color: white;
+  color: #333333;
 }
 
 @media only screen and (min-width: 768px) {

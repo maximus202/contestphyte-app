@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import NavBar from './NavBar';
+import { BrowserRouter } from 'react-router-dom';
+import Menu from './Menu';
 
-describe('NavBar', () => {
+describe('Menu', () => {
   it('renders without crashing', () => {
     const div = document.createElement('div');
-    ReactDOM.render(<NavBar />, div);
+    ReactDOM.render(<BrowserRouter><Menu /></BrowserRouter>, div);
     ReactDOM.unmountComponentAtNode(div);
   });
 });

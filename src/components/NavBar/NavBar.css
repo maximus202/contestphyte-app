@@ -21,6 +21,11 @@ img.menu-icon {
     width: 48px;
 }
 
+.close-icon {
+    font-size: 30px;
+    text-decoration: none;
+}
+
 div.ReactModal__Content.ReactModal__Content--after-open {
     width: 100%;
     height: 100%;

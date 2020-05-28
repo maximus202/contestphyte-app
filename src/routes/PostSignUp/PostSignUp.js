@@ -1,10 +1,78 @@
 import React, { Component } from 'react';
-import PostSignUpContent from '../../components/PostSignUpContent/PostSignUpContent';
+import ApiService from '../../services/api-service';
+import { Context } from '../../Context/Context';
+import Loading from '../../components/Loading/Loading';
+import './PostSignUp.css';
 
 class PostSignUp extends Component {
-  render() {
+  static contextType = Context
+
+  componentDidMount() {
+    const { match } = this.props;
+
+    const {
+      setParticipant,
+      setError,
+      clearError,
+    } = this.context;
+    clearError();
+    ApiService.getParticipant(match.params.participantId)
+      .then(setParticipant)
+      .catch(setError);
+  }
+
+  renderParticipantInfo() {
+    const { participant } = this.context;
+  
     return (
-      <PostSignUpContent contest={this.props.match.params.contestId} participant={this.props.match.params.participantId} />
+      <section className="contest-landing-page-content">
+        <main>
+          <section className="thank-you-box">
+            
+              <header>
+                <h2>Thanks for entering our contest!</h2>
+              </header>
+              <p>
+                Your number of entries:
+                {' '}
+                {participant[0].number_of_entries}
+                </p>
+                <p>
+                Share with your friends and earn 10 additional
+                entires for every friend that joins! 
+              </p>
+              <section>
+              <p>Share this personal link to invite others: <a href={`http://localhost:3000/contest/${participant[0].contest_id}/referrer/${participant[0].id}`}>
+                  contestphyte.com/contests/
+                    {participant[0].contest_id}
+                  /referrer/
+                    {participant[0].id}
+                </a>
+                </p>
+              </section>
+          </section>
+        </main>
+      </section>
+    )
+  }
+
+  render() {
+    const { error, participant } = this.context;
+    console.log(participant)
+    let content;
+    if (error) {
+      content = (error.error === 'participant does not exist')
+        ? <p>participant not found</p>
+        : <p>there was an error</p>;
+    } else if (!participant) {
+      content = <Loading />;
+    } else {
+      content = this.renderParticipantInfo();
+    }
+    return (
+      <>
+        {content}
+      </>
     );
   }
 }

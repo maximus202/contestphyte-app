@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
 import './NavBar.css';
+import { Link } from 'react-router-dom';
+import Menu from '../Menu/Menu';
 
 Modal.setAppElement('#root');
 
@@ -13,7 +15,7 @@ function NavBar() {
       left: '',
       right: '',
       padding: '',
-      background: 'rgba(255, 255, 255, 0.75);',
+      background: 'rgba(255, 255, 255, 0.75)',
     },
   };
   return (
@@ -41,18 +43,8 @@ function NavBar() {
         shouldCloseOnOverlayClick={false}
         onRequestClose={() => setModalIsOpen(false)}
       >
-        <ul>
-          <li><a href="/contests">Home</a></li>
-          <li><a href="/contests">Contests</a></li>
-          <li><a href="/create-contest">Create contest</a></li>
-          <li><a href="/account-settings">Account Settings</a></li>
-          <li><a href="/">Logout</a></li>
-        </ul>
-        <img
-          src="https://github.com/maximus202/contestphyte-app/blob/master/public/close.png?raw=true"
-          alt="Close."
-          onClick={() => setModalIsOpen(false)}
-        />
+        <Menu />
+        <Link onClick={() => setModalIsOpen(false)} className="close-icon">&#10005;</Link>
       </Modal>
     </nav>
   );
