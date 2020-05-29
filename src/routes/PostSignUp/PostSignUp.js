@@ -42,12 +42,8 @@ class PostSignUp extends Component {
                 entires for every friend that joins! 
               </p>
               <section>
-              <p>Share this personal link to invite others: <a href={`https://contestphyte-app.now.sh/${participant[0].contest_id}/referrer/${participant[0].id}`}>
-                  contestphyte.com/contests/
-                    {participant[0].contest_id}
-                  /referrer/
-                    {participant[0].id}
-                </a>
+              <p>
+                <a href={`https://contestphyte-app.now.sh/${participant[0].contest_id}/referrer/${participant[0].id}`}>Copy and share this personal link</a> to invite others.
                 </p>
               </section>
           </section>

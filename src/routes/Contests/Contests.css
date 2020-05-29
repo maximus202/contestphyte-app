@@ -1,3 +1,20 @@
 section.contest-list {
     display: flex;
 }
+
+section.contest-header-box {
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #C89F87;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+section.contest-header-box h2, section.contest-header-box a {
+    color: white;
+}
+
+li.contest-list-item {
+  text-align: left;
+}

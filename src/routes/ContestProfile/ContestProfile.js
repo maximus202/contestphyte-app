@@ -49,11 +49,13 @@ class ContestProfile extends Component {
           <h1>Contest Profile</h1>
         </header>
         <main className="with-margins">
+          <section className="contest-header-box">
         <h2>{contest[0].contest_name}</h2>
           <section className="contest-profile-buttons">
             <Link onClick={this.handleDeleteContest}>Delete contest &gt;</Link>
             <a href={`/contest/${contest[0].id}`}>View landing page &gt;</a>
-        </section>
+            </section>
+          </section>
         <h2>Details</h2>
         <section>
           <p>
@@ -66,15 +68,14 @@ class ContestProfile extends Component {
           <section>
             {participantsList.map((participant) => (
               <section key={participant.id} className="participant-item">
-                <section className="confirmed-icon">
-                  &#10003;
-              </section>
                 <section className="participant-info">
                   <p>
+                    <span className="participant-name">
                     {participant.first_name}
                     {' '}
                     {participant.last_name}
-                    {' '}
+                      {' '}
+                    </span>
                     (Entries:
                   {' '}
                   {participant.number_of_entries}

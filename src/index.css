@@ -19,7 +19,7 @@ h1, h2 {
   line-height: 40px;
   font-family: 'Bebas Neue', cursive;
   text-transform: uppercase;
-  color: #333;
+  color: #C89F87;
 }
 
   p, a, label {
@@ -27,6 +27,11 @@ h1, h2 {
   line-break: 24px;
   font-family: 'Montserrat', sans-serif;
   color: #333;
+}
+
+a {
+  color: #C89F87;
+  font-weight: 600;
 }
 
 .with-margins {
@@ -73,7 +78,8 @@ input {
 }
 
 input[type="submit"] {
-  background-color: #131313;
+  background-color: #C89F87;
+  border-bottom-color: #C89F87;
   color: white;
   height: 50px;
   border-radius: 5px;

@@ -26,7 +26,7 @@ class Contests extends Component {
     return contestsList.map((contest) => {
       if (contest.is_active === true) {
         return (
-          <li key={contest.id}>
+          <li className="contest-list-item" key={contest.id}>
             <a href={`/contest-profile/${contest.id}`}>
               {contest.contest_name}
               {' '}
@@ -47,9 +47,11 @@ class Contests extends Component {
           <h1>Contests</h1>
         </header>
         <main className="with-margins">
-          <section className="section-header">
-            <h2>Active Contests</h2>
-            <p><a href="/create-contest">Add Contest</a></p>
+          <section className="contest-header-box">
+            <section className="section-header">
+              <h2>Active Contests</h2>
+              <p><a href="/create-contest">Add Contest</a></p>
+              </section>
           </section>
           <section className="contest-list">
             <ul>

@@ -35,7 +35,7 @@ class Login extends Component {
   }
 
   render() {
-    const loading = this.context;
+    const { loading } = this.context;
     let content;
     if (loading === true) {
       content = <Loading />;
