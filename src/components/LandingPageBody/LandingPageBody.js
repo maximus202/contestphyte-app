@@ -4,7 +4,7 @@ import './LandingPageBody.css';
 function LandingPageBody() {
   return (
     <>
-      <header>
+      <header className="home-header">
         <section className="two-column-section image-right">
           <section className="individual-column">
             <img src="https://github.com/maximus202/contestphyte-app/blob/master/public/iphonetemplate.png?raw=true" alt="Contestphyte screenshot on iPhone." />
@@ -16,8 +16,10 @@ function LandingPageBody() {
               visitors, mobilizes your followers, and gets your
               name trending!
             </p>
-            <p><a href="/signup">Run a contest &gt;</a></p>
-            <p><a href="/login">Login &gt;</a></p>
+            <p className="header-links">
+              <a href="/signup">Create account</a>
+              <a href="/login">Login</a>
+            </p>
           </section>
         </section>
       </header>

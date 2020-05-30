@@ -76,16 +76,15 @@ class ContestProfile extends Component {
                     {participant.last_name}
                       {' '}
                     </span>
-                    (Entries:
+                  </p>
+                  <p>
+                    Entries:
                   {' '}
-                  {participant.number_of_entries}
-                    )
-                </p>
+                    {participant.number_of_entries}, Referrals: 
+                    {' '}
+                    {participant.number_of_referrals}
+                  </p>
                   <p>{participant.email_address}</p>
-                </section>
-                <section className="referrals">
-                  <p>{participant.number_of_referrals}</p>
-                  <p>Referrals</p>
                 </section>
               </section>
             ))}

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import NavBar from '../../components/NavBar/NavBar';
 import { Context } from '../../Context/Context';
 import Loading from '../../components/Loading/Loading';
+import LoginFailed from '../../components/LoginFailed/LoginFailed';
 
 class Login extends Component {
   static contextType = Context
@@ -35,9 +36,14 @@ class Login extends Component {
   }
 
   render() {
-    const { loading } = this.context;
+    const { error, loading } = this.context;
     let content;
-    if (loading === true) {
+    if (error) {
+      content = (error.message === `incorrect username or password`)
+        ? <LoginFailed />
+        : <p>There was an error.</p>
+    }
+    else if (loading === true) {
       content = <Loading />;
     } else {
       content = this.renderLoginPage();

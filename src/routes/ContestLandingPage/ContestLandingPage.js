@@ -49,10 +49,9 @@ class ContestLandingPage extends Component {
               {contest[0].contest_description}
             </p>
             <p>
-              Read the
+              Official rules:
               {' '}
-              <a href={`${contest[0].official_rules_url}`}>official rules</a>
-              .
+              <a href={`${contest[0].official_rules_url}`}>click here</a>
             </p>
             <p>
               Prize value: ${contest[0].prize_value}

@@ -1,0 +1,11 @@
+section.login-failed {
+   display: flex;
+   justify-content: center;
+   width: 70%;
+   margin-left: auto;
+    margin-right: auto;
+}
+
+section.login-failed p {
+    text-align: center;
+}

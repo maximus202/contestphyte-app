@@ -43,7 +43,12 @@ class PostSignUp extends Component {
               </p>
               <section>
               <p>
-                <a href={`https://contestphyte-app.now.sh/${participant[0].contest_id}/referrer/${participant[0].id}`}>Copy and share this personal link</a> to invite others.
+                <a
+                  href={`https://contestphyte-app.now.sh/contest/${participant[0].contest_id}/referrer/${participant[0].id}`}>
+                  Share this personal link
+                  </a>
+                {' '}
+                to invite others.
                 </p>
               </section>
           </section>

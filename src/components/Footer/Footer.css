@@ -1,9 +1,9 @@
 footer {
-    background-color: black;
-    color: white;
+    background-color: #333333;
 }
 
 footer p {
     margin: 0;
     font-size: 12px;
+    color: white;
 }

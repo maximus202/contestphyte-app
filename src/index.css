@@ -15,16 +15,16 @@ code {
 }
 
 h1, h2 {
-  font-size: 34px;
-  line-height: 40px;
+  font-size: 40px;
+  line-height: 52px;
   font-family: 'Bebas Neue', cursive;
   text-transform: uppercase;
   color: #C89F87;
 }
 
-  p, a, label {
-  font-size: 15px;
-  line-break: 24px;
+  p, a, label, select {
+  font-size: 19px;
+  line-height: 1.4;
   font-family: 'Montserrat', sans-serif;
   color: #333;
 }
@@ -75,6 +75,7 @@ input {
   border-bottom: 1px solid #131313;
   height: 40px;
   margin-bottom: 5px;
+  font-size: 19px;
 }
 
 input[type="submit"] {
@@ -83,7 +84,7 @@ input[type="submit"] {
   color: white;
   height: 50px;
   border-radius: 5px;
-  font-size: 15px;
+  font-size: 19px;
   line-break: 24px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
@@ -93,24 +94,29 @@ section.call-to-action h2 {
   color: white;
 }
 
-footer p {
-  color: #333333;
-}
-
 @media only screen and (min-width: 768px) {
-   h1 {
-  font-size: 45px;
-  line-height: 48px;
+h1, h2 {
+  font-size: 48px;
+  line-height: 1.08;
 }
 
-p, a {
-  font-size: 16px;
-  line-height: 24px;
+p, a, label, select {
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+input {
+  font-size: 17px;
+}
+
+input[type="submit"] {
+  border-radius: 5px;
+  font-size: 17px;
+  line-break: 1.4;
 }
 
   section.two-column-section {
     display: flex;
-    height: -webkit-fill-available;
   }
 
   section.image-right {

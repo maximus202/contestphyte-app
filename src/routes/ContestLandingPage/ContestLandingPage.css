@@ -28,6 +28,7 @@ footer.contest-landing-page-footer {
 
 footer.contest-landing-page-footer p, footer.contest-landing-page-footer a {
     font-size: 12px;
+    color: #333333;
 }
 
 @media only screen and (min-width: 768px) {

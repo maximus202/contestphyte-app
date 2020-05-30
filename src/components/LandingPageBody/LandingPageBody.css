@@ -1,6 +1,19 @@
+header.home-header {
+    background-color: #C89F87;
+}
+
+header.home-header p, header.home-header h1, header.home-header a {
+    color: white;
+}
+
 section.two-column-section img {
     max-width: 100%;
     max-height: 100%;
+}
+
+p.header-links {
+    display: flex;
+    flex-direction: column;
 }
 
 /*Call to action section*/

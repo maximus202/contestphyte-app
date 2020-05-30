@@ -49,7 +49,7 @@ export class Provider extends React.Component {
             email_address: loginEmail,
             password: loginPassword,
         };
-        AuthApiService.postLogin(data)
+      AuthApiService.postLogin(data)
             .then((res) => {
                 TokenService.saveAuthToken(res.authToken);
             })

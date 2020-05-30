@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ApiService from '../../services/api-service';
+import './CreateContestForm.css';
 
 class CreateContestForm extends Component {
   constructor(props) {
@@ -158,26 +159,26 @@ class CreateContestForm extends Component {
     } = this.state;
     return (
       <main>
-        <form className="with-margins" onSubmit={(e) => handleSubmitNewContest(e)}>
+        <form className="create-contest-form" onSubmit={(e) => handleSubmitNewContest(e)}>
           <section className="form-section">
             <h2>Business information</h2>
             <label htmlFor="business-name">Business name</label>
-            <input type="text" name="business-name" placeholder="The name of your company (ex: ABC company)." onChange={handleCompanyName} required/>
+            <input type="text" name="business-name" placeholder="ABC company" onChange={handleCompanyName} required/>
             <label htmlFor="business-website-url">Business Website URL</label>
-            <input type="url" name="business-website-url" placeholder="Your company's website (ex: http://www.abccompany.com)." onChange={handleCompanyUrl} required/>
+            <input type="url" name="business-website-url" placeholder="http://www.abccompany.com" onChange={handleCompanyUrl} required/>
           </section>
           <section className="form-section">
             <h2>Contest details</h2>
             <label htmlFor="contest-end-datetime">Contest End Date/Time</label>
             <input type="datetime-local" name="contest-end-datetime" onChange={handleEndDateTime} required/>
             <label htmlFor="prize-value">Prize Value (USD)</label>
-            <input type="text" name="price-value" placeholder="300" onChange={handlePrizeValue} required/>
-            <label htmlFor="contest-title">Contest Title</label>
-            <input type="text" name="contest-title" placeholder="Ex: Enter our giveaway for a chance to win a gift card!" onChange={handleContestName} required/>
+            <input type="number" name="price-value" placeholder="300" onChange={handlePrizeValue} required/>
+            <label htmlFor="contest-title">Contest Title (80 character max)</label>
+            <input type="text" maxlength="80" name="contest-title" placeholder="Join June's contest!" onChange={handleContestName} required/>
             <label htmlFor="contest-description">Contest Description</label>
-            <input type="text" name="contest-description" placeholder="Use this block to motivate users to enter your giveaway." onChange={handleContestDescription} required/>
+            <input type="text" name="contest-description" placeholder="Motivate users to join." onChange={handleContestDescription} required/>
             <label htmlFor="image-url">Image URL</label>
-            <input type="url" name="image-url" placeholder="Recommended size: 800x400, Recommended file type: JPEG" onChange={handleImageUrl} required />
+            <input type="url" name="image-url" placeholder="Recommended size: 800x400" onChange={handleImageUrl} required />
           </section>
           <section className="form-section">
             <h2>Official Rules</h2>
@@ -187,9 +188,9 @@ class CreateContestForm extends Component {
 
             </p>
             <label htmlFor="contest-rules-url">Contest Rules URL</label>
-            <input type="text" name="contest-rules-url" placeholder="Ex: http://www.abccompany.com/contesttermsandconditions" onChange={handleOfficialRulesUrl} required/>
+            <input type="url" name="contest-rules-url" placeholder="http://www.abccompany.com/rules" onChange={handleOfficialRulesUrl} required/>
             <label htmlFor="contact-email">Contact Email</label>
-            <input type="email" name="contact-email" placeholder="Ex: contact@abccompany.com" onChange={handleCompanyEmail} required/>
+            <input type="email" name="contact-email" placeholder="contact@company.com" onChange={handleCompanyEmail} required/>
             <label htmlFor="business-mailing-address">Business Mailing Address</label>
             <input type="text" name="business-mailing-address" placeholder="Ex: 123 W Main St." onChange={handleBusinessMailingAddress} required/>
             <label htmlFor="business-state">Business State</label>
@@ -248,7 +249,7 @@ class CreateContestForm extends Component {
               <option value="Wyoming">Wyoming</option>
             </select>
             <label htmlFor="business-zip-code">Business Zip Code</label>
-            <input type="text" name="business-zip-code" placeholder="Ex: 38424" onChange={handleBusinessZipCode} required />
+            <input type="number" name="business-zip-code" placeholder="Ex: 38424" onChange={handleBusinessZipCode} required />
           </section>
           <section className="create-contest-form-options">
           </section>
