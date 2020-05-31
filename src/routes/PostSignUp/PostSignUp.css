@@ -5,3 +5,8 @@ section.thank-you-box {
     padding: 5% 10%;
     border-radius: 5px;
 }
+
+section.social-buttons {
+    display: flex;
+    justify-content: center;
+}

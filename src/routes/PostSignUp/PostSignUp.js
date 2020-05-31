@@ -50,6 +50,9 @@ class PostSignUp extends Component {
                 {' '}
                 to invite others.
                 </p>
+              <section className="social-buttons">
+                <p>Share on your social media platforms:</p>
+                </section>
               </section>
           </section>
         </main>
@@ -59,7 +62,6 @@ class PostSignUp extends Component {
 
   render() {
     const { error, participant } = this.context;
-    console.log(participant)
     let content;
     if (error) {
       content = (error.error === 'participant does not exist')

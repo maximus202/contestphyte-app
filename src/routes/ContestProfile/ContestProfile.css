@@ -1,3 +1,7 @@
+img.contest-profile-image {
+    width: 100%;
+}
+
 section.participant-item {
     display: flex;
     align-items: center;

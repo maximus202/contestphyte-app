@@ -2,6 +2,10 @@ section.contest-list {
     display: flex;
 }
 
+ul.contest-list {
+    width: 100%
+}
+
 section.contest-header-box {
     padding-left: 10px;
     padding-right: 10px;
@@ -22,4 +26,10 @@ section.contest-header-box p {
 
 li.contest-list-item {
   text-align: left;
+  border-bottom: solid 2px #F2F2F2;
+  height: 40px;
+}
+
+li.contest-list-item a {
+    text-decoration: none;
 }

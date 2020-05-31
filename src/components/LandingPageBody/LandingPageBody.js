@@ -7,7 +7,7 @@ function LandingPageBody() {
       <header className="home-header">
         <section className="two-column-section image-right">
           <section className="individual-column">
-            <img src="https://github.com/maximus202/contestphyte-app/blob/master/public/iphonetemplate.png?raw=true" alt="Contestphyte screenshot on iPhone." />
+            <img src="https://github.com/maximus202/contestphyte-app/blob/styling/public/iphonetemplate.png?raw=true" alt="Contestphyte screenshot on iPhone." />
           </section>
           <section className="individual-column landing-page-copy">
             <h1>Encourage brand awareness from your biggest fans.</h1>

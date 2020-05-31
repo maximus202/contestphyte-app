@@ -39,7 +39,6 @@ class ContestEntryForm extends Component {
         const { history } = this.props;
         const contestId = this.props.contestId;
         const referrerId = this.props.referrerId;
-        console.log(referrerId)
         
         const {
             handleError,
@@ -62,8 +61,6 @@ class ContestEntryForm extends Component {
 
     render() {
         const contest = this.props.contest;
-
-        console.log(this.props)
 
         const {
             handleFirstName,

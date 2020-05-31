@@ -178,7 +178,7 @@ class CreateContestForm extends Component {
             <label htmlFor="contest-description">Contest Description</label>
             <input type="text" name="contest-description" placeholder="Motivate users to join." onChange={handleContestDescription} required/>
             <label htmlFor="image-url">Image URL</label>
-            <input type="url" name="image-url" placeholder="Recommended size: 800x400" onChange={handleImageUrl} required />
+            <input type="url" name="image-url" placeholder="Recommended size: 800x400." onChange={handleImageUrl} required />
           </section>
           <section className="form-section">
             <h2>Official Rules</h2>

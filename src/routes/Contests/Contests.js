@@ -54,7 +54,7 @@ class Contests extends Component {
               </section>
           </section>
           <section className="contest-list">
-            <ul>
+            <ul className="contest-list">
               {error
                 ? <p>No active contests</p>
                 : this.renderActiveContests()
