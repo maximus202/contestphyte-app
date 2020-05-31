@@ -24,6 +24,7 @@ img.menu-icon {
 .close-icon {
     font-size: 30px;
     text-decoration: none;
+    color: #CFAB96;
 }
 
 div.ReactModal__Content.ReactModal__Content--after-open {

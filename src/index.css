@@ -22,7 +22,7 @@ h1, h2 {
   color: #C89F87;
 }
 
-  p, a, label, select {
+  p, a, label, select, button {
   font-size: 19px;
   line-height: 1.4;
   font-family: 'Montserrat', sans-serif;

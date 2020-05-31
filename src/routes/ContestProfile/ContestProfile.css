@@ -36,6 +36,30 @@ section.contest-profile-buttons {
     padding-bottom: 10px;
 }
 
+section.contest-profile-buttons a {
+    text-decoration: none;
+    border: solid 1px white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 2px 10px;
+    width: fit-content;
+    margin-bottom: 2px;
+    margin-left: 2px;
+}
+
+section.contest-profile-buttons button {
+    background-color: transparent;
+    padding: 2px 10px;
+    color: white;
+    border: solid 1px white;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    border-radius: 5px;
+    font-size: 19px;
+    font-weight: 600;
+    width: fit-content;
+}
+
 span.participant-name {
     font-weight: 600;
 }
@@ -44,7 +68,8 @@ span.participant-name {
     section.contest-profile-buttons {
         flex-direction: row;
     }
-    section.contest-profile-buttons a {
-        padding-right: 10px;
-    }
+
+    section.contest-profile-buttons button {
+    font-size: 17px;
+}
 }

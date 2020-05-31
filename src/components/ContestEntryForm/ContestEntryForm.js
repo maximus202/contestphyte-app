@@ -56,7 +56,7 @@ class ContestEntryForm extends Component {
         
         ApiService.submitParticipant(inputData, contestId, history)
         .then((res) => history.push(`/post-sign-up/${contestId}/${res.id}`))
-            //.catch((error) => handleError(error));
+        .catch((error) => handleError(error));
     }
 
     render() {

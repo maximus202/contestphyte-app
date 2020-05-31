@@ -3,7 +3,6 @@ import NavBar from '../../components/NavBar/NavBar';
 import { Context } from '../../Context/Context';
 import Loading from '../../components/Loading/Loading';
 import ApiService from '../../services/api-service';
-import { Link } from 'react-router-dom';
 import './ContestProfile.css';
 
 class ContestProfile extends Component {
@@ -37,10 +36,39 @@ class ContestProfile extends Component {
       .then(() => this.props.history.push('/'));
   }
 
+  renderParticipants() {
+    const { participantsList } = this.context;
+    if (participantsList.length === 0) {
+      return <p>No participants found.</p>
+    } else {
+      return participantsList.map((participant) => (
+          <section key={participant.id} className="participant-item">
+            <section className="participant-info">
+              <p>
+                <span className="participant-name">
+                  {participant.first_name}
+                  {' '}
+                  {participant.last_name}
+                  {' '}
+                </span>
+              </p>
+              <p>
+                Entries:
+                  {' '}
+                {participant.number_of_entries}, Referrals:
+                    {' '}
+                {participant.number_of_referrals}
+              </p>
+              <p>{participant.email_address}</p>
+            </section>
+          </section>
+        ))
+    }
+  }
+
   renderContest() {
     const {
       contest,
-      participantsList,
     } = this.context;
 
     return (
@@ -52,7 +80,7 @@ class ContestProfile extends Component {
           <section className="contest-header-box">
             <h2>{contest[0].contest_name}</h2>
             <section className="contest-profile-buttons">
-              <Link onClick={this.handleDeleteContest}>Delete contest &gt;</Link>
+              <button onClick={this.handleDeleteContest}>Delete contest &gt;</button>
               <a href={`/contest/${contest[0].id}`}>View landing page &gt;</a>
             </section>
           </section>
@@ -79,35 +107,13 @@ class ContestProfile extends Component {
             {' '}
               {contest[0].end_datetime}
             </p>
-            <p>Official rules:
-              {' '}
-              <a href={contest[0].official_rules_url}>{contest[0].official_rules_url}</a>
+            <p>
+              <a href={contest[0].official_rules_url}>Official rules</a>
             </p>
           </section>
           <h2>Participants</h2>
           <section>
-            {participantsList.map((participant) => (
-              <section key={participant.id} className="participant-item">
-                <section className="participant-info">
-                  <p>
-                    <span className="participant-name">
-                      {participant.first_name}
-                      {' '}
-                      {participant.last_name}
-                      {' '}
-                    </span>
-                  </p>
-                  <p>
-                    Entries:
-                  {' '}
-                    {participant.number_of_entries}, Referrals:
-                    {' '}
-                    {participant.number_of_referrals}
-                  </p>
-                  <p>{participant.email_address}</p>
-                </section>
-              </section>
-            ))}
+            {this.renderParticipants()}
           </section>
         </main>
       </>

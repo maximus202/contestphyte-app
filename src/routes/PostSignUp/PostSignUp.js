@@ -50,9 +50,6 @@ class PostSignUp extends Component {
                 {' '}
                 to invite others.
                 </p>
-              <section className="social-buttons">
-                <p>Share on your social media platforms:</p>
-                </section>
               </section>
           </section>
         </main>

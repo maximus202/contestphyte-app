@@ -174,7 +174,7 @@ class CreateContestForm extends Component {
             <label htmlFor="prize-value">Prize Value (USD)</label>
             <input type="number" name="price-value" placeholder="300" onChange={handlePrizeValue} required/>
             <label htmlFor="contest-title">Contest Title (80 character max)</label>
-            <input type="text" maxlength="80" name="contest-title" placeholder="Join June's contest!" onChange={handleContestName} required/>
+            <input type="text" maxLength="80" name="contest-title" placeholder="Join June's contest!" onChange={handleContestName} required/>
             <label htmlFor="contest-description">Contest Description</label>
             <input type="text" name="contest-description" placeholder="Motivate users to join." onChange={handleContestDescription} required/>
             <label htmlFor="image-url">Image URL</label>

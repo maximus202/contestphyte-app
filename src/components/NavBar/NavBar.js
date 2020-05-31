@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
 import './NavBar.css';
-import { Link } from 'react-router-dom';
 import Menu from '../Menu/Menu';
 
 Modal.setAppElement('#root');
@@ -44,7 +43,7 @@ function NavBar() {
         onRequestClose={() => setModalIsOpen(false)}
       >
         <Menu />
-        <Link onClick={() => setModalIsOpen(false)} className="close-icon">&#10005;</Link>
+        <p onClick={() => setModalIsOpen(false)} className="close-icon">&#10005;</p>
       </Modal>
     </nav>
   );
