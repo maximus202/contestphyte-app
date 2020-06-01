@@ -29,6 +29,14 @@ h1, h2 {
   color: #333;
 }
 
+button {
+  background-color: #C89F87;
+  border: #C89F87;
+  color: white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
 a {
   color: #C89F87;
   font-weight: 600;
@@ -76,7 +84,6 @@ input {
   height: 40px;
   margin-bottom: 5px;
   font-size: 19px;
-  width: 100%;
 }
 
 input[type="submit"] {

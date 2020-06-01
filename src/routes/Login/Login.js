@@ -27,7 +27,7 @@ class Login extends Component {
             <input type="email" name="email-address" onChange={handleSubmitLoginEmail} required/>
             <label htmlFor="password">Password</label>
             <input type="password" name="password" onChange={handleSubmitLoginPassword} required/>
-            <input type="submit" value="Login" />
+            <button type="submit">Login</button>
             <p><a href="/signup">Create an account &gt;</a></p>
           </form>
         </main>
