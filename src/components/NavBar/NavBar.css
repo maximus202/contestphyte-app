@@ -15,6 +15,7 @@ img.logo {
 
 nav section {
     display: flex;
+    align-items: center;
 }
 
 img.menu-icon {
