@@ -57,9 +57,13 @@ function LandingPageBody() {
           Try it out!
         </h2>
         <p>
-          <a href="/signup">
-            Get started &gt;
-          </a>
+          Take Contestphyte for a spin. Use this demo account at
+          {' '}
+          <a href="/login">login</a>
+          :
+        </p>
+        <p>
+          Email: demo@contestphyte.com | Password: contestphytedemo
         </p>
       </section>
     </>
