@@ -86,18 +86,6 @@ input {
   font-size: 19px;
 }
 
-input[type="submit"] {
-  background-color: #C89F87;
-  border-bottom-color: #C89F87;
-  color: white;
-  height: 50px;
-  border-radius: 5px;
-  font-size: 19px;
-  line-break: 24px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-}
-
 section.call-to-action h2 {
   color: white;
 }
@@ -115,12 +103,6 @@ p, a, label, select {
 
 input {
   font-size: 17px;
-}
-
-input[type="submit"] {
-  border-radius: 5px;
-  font-size: 17px;
-  line-height: 1.4;
 }
 
   section.two-column-section {

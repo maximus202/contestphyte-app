@@ -253,7 +253,7 @@ class CreateContestForm extends Component {
           </section>
           <section className="create-contest-form-options">
           </section>
-          <input type="submit" value="Publish" />
+          <button type="submit">Publish</button>
         </form>
       </main>
     );

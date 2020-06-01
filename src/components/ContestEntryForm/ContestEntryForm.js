@@ -81,7 +81,7 @@ class ContestEntryForm extends Component {
                 <p>Please note by entering this contest, you give {contest[0].company_name} permission to
                 send you emails regarding the contest as well as any other marketing-related emails. To
               be removed from their email list, contact <a href={`${contest[0].company_email}`}>{contest[0].company_email}</a>.</p>
-                <input type="submit" value="Create" />
+                <button type="submit">Create</button>
             </form>
         )
     }
