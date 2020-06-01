@@ -65,10 +65,6 @@ span.participant-name {
 }
 
 @media only screen and (min-width: 768px) {
-    section.contest-profile-buttons {
-        flex-direction: row;
-    }
-
     section.contest-profile-buttons button {
     font-size: 17px;
 }

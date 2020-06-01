@@ -170,7 +170,7 @@ class CreateContestForm extends Component {
           <section className="form-section">
             <h2>Contest details</h2>
             <label htmlFor="contest-end-datetime">Contest End Date/Time</label>
-            <input type="datetime-local" name="contest-end-datetime" onChange={handleEndDateTime} required/>
+            <input type="datetime-local" name="contest-end-datetime" placeholder="2025-06-25T9:30" onChange={handleEndDateTime} required/>
             <label htmlFor="prize-value">Prize Value (USD)</label>
             <input type="number" name="price-value" placeholder="300" onChange={handlePrizeValue} required/>
             <label htmlFor="contest-title">Contest Title (80 character max)</label>
