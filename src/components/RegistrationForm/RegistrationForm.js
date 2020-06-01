@@ -77,7 +77,7 @@ class RegistrationForm extends Component {
         <input type="email" name="email-address" onChange={handleEmailInputChange} required />
         <label name="password">Password</label>
         <input type="password" name="password" onChange={handlePasswordInputChange} required />
-        <input type="submit" value="Create account" />
+        <button type="submit">Create account</button>
         <p><a href="/login">Already have an account? Login &gt;</a></p>
       </form>
     );
