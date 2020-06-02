@@ -1,3 +1,6 @@
+/* eslint-disable import/named */
+/* eslint-disable import/no-named-as-default-member */
+/* eslint-disable import/no-named-as-default */
 import React from 'react';
 import { Route } from 'react-router-dom';
 import { Provider } from './Context/Context';

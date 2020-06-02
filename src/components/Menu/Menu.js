@@ -1,3 +1,5 @@
+/* eslint-disable import/no-named-as-default-member */
+/* eslint-disable import/no-named-as-default */
 import React from 'react';
 import TokenService from '../../services/token-service';
 import LoggedIn from '../LoggedIn/LoggedIn';

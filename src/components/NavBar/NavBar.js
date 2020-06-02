@@ -26,15 +26,13 @@ function NavBar() {
           alt="Contestphyte logo."
         />
       </a>
-      <section
-        type="button"
-        onClick={() => setModalIsOpen(true)}
-      >
-        <img
-          className="menu-icon"
-          src="https://github.com/maximus202/contestphyte-app/blob/master/public/menu.png?raw=true"
-          alt="Menu."
-        />
+      <section>
+        <button type="button" onClick={() => setModalIsOpen(true)} className="menu-icon">
+          <img
+            src="https://github.com/maximus202/contestphyte-app/blob/master/public/menu.png?raw=true"
+            alt="Menu."
+          />
+        </button>
       </section>
       <Modal
         isOpen={modalIsOpen}
@@ -43,7 +41,7 @@ function NavBar() {
         onRequestClose={() => setModalIsOpen(false)}
       >
         <Menu />
-        <p onClick={() => setModalIsOpen(false)} className="close-icon">&#10005;</p>
+        <button type="button" onClick={() => setModalIsOpen(false)} className="close-icon">&#10005;</button>
       </Modal>
     </nav>
   );

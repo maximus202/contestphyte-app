@@ -8,6 +8,10 @@ nav {
     box-shadow: 1px 1px 7px lightgrey;
 }
 
+button.close-icon {
+    background-color: transparent;
+}
+
 img.logo {
     width: 170px;
     height: 100%;
@@ -18,7 +22,11 @@ nav section {
     align-items: center;
 }
 
-img.menu-icon {
+button.menu-icon {
+    background-color: transparent;
+}
+
+button.menu-icon img {
     width: 48px;
 }
 

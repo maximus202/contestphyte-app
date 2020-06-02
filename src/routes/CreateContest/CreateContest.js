@@ -1,4 +1,7 @@
+/* eslint-disable import/no-named-as-default-member */
+/* eslint-disable import/no-named-as-default */
 import React from 'react';
+import PropTypes from 'prop-types';
 import NavBar from '../../components/NavBar/NavBar';
 import './CreateContest.css';
 import CreateContestForm from '../../components/CreateContestForm/CreateContestForm';
@@ -17,3 +20,7 @@ function CreateContest(props) {
 }
 
 export default CreateContest;
+
+CreateContest.propTypes = {
+  history: PropTypes.object.isRequired,
+};
