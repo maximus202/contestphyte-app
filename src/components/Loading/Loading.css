@@ -2,3 +2,7 @@ section.loading-page {
    display: flex;
    justify-content: center;
 }
+
+section.loading-page img {
+   align-self: center;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import './LandingPageBody.css';
+import Loading from '../Loading/Loading';
 
 function LandingPageBody() {
   return (
