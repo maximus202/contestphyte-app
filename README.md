@@ -16,22 +16,22 @@ This concept of creating a viral-like contest where participants are incentivize
 ## Screenshots
 
 Home
-![home](https://github.com/maximus202/productionweaver-app/blob/master/public/Home.png?raw=true)
+![home](https://github.com/maximus202/contestphyte-app/blob/master/public/home.png?raw=true)
 
-Dashboard
-![dashboard](https://github.com/maximus202/productionweaver-app/blob/master/public/Dashboard.png?raw=true)
+Contests List
+![contests](https://github.com/maximus202/contestphyte-app/blob/master/public/contests.png?raw=true)
 
-Production Tools
-![productiontools](https://github.com/maximus202/productionweaver-app/blob/master/public/ProductionTools.png?raw=true)
+Create New Contest
+![createcontest](https://github.com/maximus202/contestphyte-app/blob/master/public/create-contest.png?raw=true)
 
-Scene List
-![scenelist](https://github.com/maximus202/productionweaver-app/blob/master/public/SceneList.png?raw=true)
+Contest Profile
+![contestprofile](https://github.com/maximus202/contestphyte-app/blob/master/public/contest-profile.png?raw=true)
 
-New Scene Form
-![newscene](https://github.com/maximus202/productionweaver-app/blob/master/public/NewScene.png)
+Contest Campaign Landing Page
+![contestlandingpage](https://github.com/maximus202/contestphyte-app/blob/master/public/contest-landing.png?raw=true)
 
-Scene Breakdown
-![scenebreakdown](https://github.com/maximus202/productionweaver-app/blob/master/public/SceneBreakdown.png?raw=true)
+Contest Post-Signup
+![contestpostsignup](https://github.com/maximus202/contestphyte-app/blob/master/public/contest-thank-you.png?raw=true)
 
 ## Built With
     *  React
@@ -41,20 +41,18 @@ Scene Breakdown
     *  CSS
 
 ## APIs Used
--  [ProductionWeaver](https://github.com/maximus202/productionweaver-server)
+-  [Contestphyte](https://github.com/maximus202/productionweaver-server)
 
 ## Features
-    * Manage all your productions and scenes in one place. 
-    * Keep track of every element in your script using the Script Breakdown tool.
-    * Coming soon: budgets, shooting schedules, shot lists, storyboards, call sheets, contact management, and more!
+    * Create as many campaigns as you'd like and simply share the landing page link to promote it
+    * Get access to all your participants' information for further marketing opportunities
+    * Keep track of each participants' stats. Such as; number of entries and number of referrals
+    * Minimalist, focused landing pages designed with simplicity in mind for your visitors
 
 ## Coming soon
-    *  Budgets
-    *  Shooting Schedules
-    *  Shot Lists
-    *  Storyboards
-    *  Call Sheets
-    *  Contact Management
+    *  Participant email confirmations
+    *  Participant ability to email contacts directly from within Contestphyte to share the contest
+    *  Motivate participants to share the contest by periodically sending reminder emails throughout the contest duration
 
 ## Last updated
-April 3, 2020.
+June 2, 2020.
